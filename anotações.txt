@@ -1,0 +1,168 @@
+Curso em HTML5 e CSS3
+
+ANOTAÇÕES:
+
+Repositórios Públicos: githun.com/gustavoguanabara; gustavoguanabara.github.io
+1 byte= 8 bits/1024 bytes= 1KB/ 1024 KB= 1MB/ 1024 MB= 1GB/1024GB= 1TB/ 1024TB = 1PB/ 1024PB= 1EB/ 1024EB = 1 ZB/ 1024ZB = 1YB/...
+MB= Megabytes(armazenamentos)/ Mb= Megabits(transmissão)
+*utf-8?*
+
+HTML=Conteúdo 
+CSS=Design
+JS(JavaScript)=Interações
+
+Conteudos em HTML
+<h1> (abertura de tag) exemplo de título </h1> (fechamento de tag)
+<p> exemplo de parágrafo </p>
+<img src="foto.png" alt="exemplo de foto">
+
+Estilo em CSS
+
+h1{font-familly: Arial;font-size: 20pt;color: blue;}
+ 
+Estrutura básica de documento HTML
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+</head>
+<body>
+<h1>Olá, Mundo!</h1>
+</body>
+</html>
+
+Front-end e Back-ent
+
+client-side= front-ent(visual e interativo)
+server-side= back-ent(interação do código no servisor)
+
+index.html para criar 
+&lt; e &gt; para dar enfase nos codigos sem que eles se tornem codigo, mostrar no site por exemplo, <p>
+pt-br para deixar a pagina em portugues 
+
+CTRL+SHIFT+P (>abb)
+
+ao inves de usar "b" usar "strong" quando quiser dar destaque em um termo
+ao invés de usar "i" usar "em" quando quiser dar ênfase 
+
+TAG MARK marca texto
+
+ao invés de colocar "aspas" usar a tag "q", quando se trata de citações
+ 
+Para acessar link e abrir outra guia, usar target _blank e rel externa1
+
+source( 1050px e 750px) imagens/...nome da imagem. img no alt colocar "imagens flexivel"(serve para deixar a tela flexivel a qualquer dispositivo)
+
+colocar audio: colocar áudio src e na frente a midia q escolher, colocar "controls autoplay
+
+<video width="500" poster="imagens/limao.jpg" controls>
+    <source src="midia/meu-video.mp4" type="video/mp4">
+    </video>
+
+link.css para aplicar o mesmo estilo em todas as paginas 
+usar regras na primeira linha @charset "UTF-8";
+
+
+*Seletores personalizados*
+Tudo em HTML é id = em CSS é #
+Tudo em HTML é class= em CSS é .
+Tudo em HTML é pseudo-class= em CSS é :
+Tudo em HTML é pseudo-element= em CSS é ::
+Tudo em HTML é clildren= em CSS é >
+
+ height(altura)
+ width(largura)
+
+div:hover( para passar o mouse e mudar de cor)
+
+ div > p {
+            display: none;
+        }
+        div:hover > p{
+            display: block;
+            color: white;
+            background-color: red;
+            width: 300px;
+        }
+        div:hover {
+            color: red;
+        }
+
+isso serve para esconder o texto e ao passar o mouse em cima aparecer
+
+a:visited{
+            color: darkred;
+        }
+
+        a:hover{
+            color: black;
+            text-decoration: underline;
+        }
+
+        a:active{
+            color: yellow;
+        }
+
+quando se trata em clicar em links
+
+
+BOX-LEVEL
+
+- <div>
+-<h1>-<h6>
+-<p>
+-<main>
+-<header>
+-<nav>
+-<article>
+-<aside>
+-<footer>
+-<form>
+-<video>
+
+INCLINE-LEVEL
+
+-<span>
+-<a>
+-<code>
+-<small>
+-<strong>
+-<em>
+-<sup>-<sub>
+-<label>
+-<button>
+-<input>
+-<select>
+
+:root{
+    --cor0:#c5ebd6;
+    --cor1:#83e1ad;
+    --cor2:#3ddc84;
+    --cor3:#2fa866;
+    --cor4:#1a5c37;
+    --cor5:#063d1e;
+
+}
+
+para padrão de cores mais rapidos, fontes de letras mais rapidas, e quando editar ja edita de tdds auto
+
+*Para mexer no menu* 
+
+nav > a{
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition-duration: .5s;
+}
+
+nav > a:hover{
+    background-color: var(--cor3);
+    color: var(--cor5);
+}
+
+
