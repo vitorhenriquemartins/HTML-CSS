@@ -200,3 +200,41 @@ centralizando em uma imagem
 
 
 TODAS LETRAS MAIUSCULAS  -  text-transform: uppercase;
+
+Hierarquia de tabelas: 
+
+table=tabela
+	table row(tr)= linha de tabela
+		table header(th)= cabeçalho de tabela- scope=''col''- e - scope=''row''
+			table data(td)= dado de tabela
+
+anatomia da tabela:
+table
+	caption
+	thead
+	(tr,td,th)
+	tbody
+	(tr,td,th)
+	tfoot
+	(tr,td,th)
+
+deixar zebrado: 
+tbody > tr:nth-child(2n){
+            background-color: lightgray;
+
+PARA A TABELA CONTINUAR COM O TITULO FIXADO ENQUANTO DESCE A ROLAGEM
+
+thead > tr > th {
+            position: sticky;
+            top: 0;
+            background-color: grey;
+        }
+
+
+para deixar a barra de ROLAGEM APENAS NA TABELA:
+
+envelopar toda a tabela em div, colocar id na div e em style colocar 
+
+div#container{
+            overflow-x: auto;
+        }

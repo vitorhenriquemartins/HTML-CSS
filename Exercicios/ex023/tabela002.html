@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            width: 500px;
+            border-collapse: collapse;
+            position: relative;
+        }
+
+        td,th{
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+        thead, tfoot{
+            background-color: gray;
+            color: white;
+        }
+        thead > tr > th {
+            position: sticky;
+            top: 0;
+            background-color: grey;
+        }
+        tbody > tr:nth-child(odd){
+            background-color: lightgray;
+        }
+        td.num{
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    
+    <table>
+        <caption>População das Unidadesd Federativas</caption>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
+            </tr>
+        </thead>
+       
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45 919 049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21 168 791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17 264 943</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <th scope="row">Total de Habitantes</th>
+                <td class="num"><strong>84 352 783</strong></td>
+            </tr>
+
+        </tfoot>
+        
+    </table>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati ipsam reprehenderit facere dignissimos? Perspiciatis quisquam itaque autem tempora mollitia praesentium nesciunt deleniti alias similique animi, omnis, sunt rerum ipsum maxime. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam repellat provident vitae minima laborum dolorem autem, distinctio reprehenderit explicabo fugit dicta nostrum molestias, architecto vel et mollitia esse nulla eius. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi aut dolores veniam consequuntur consequatur perspiciatis, eligendi provident a mollitia assumenda, alias, deleniti accusamus non quia deserunt eaque nemo architecto eveniet.
+ Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint repellendus voluptate, harum ducimus porro nulla distinctio soluta enim quos deserunt ratione. Libero provident eligendi eius atque ducimus tenetur porro asperiores.
+    </p>
+
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus iste iure nisi iusto quia mollitia obcaecati et est rerum? Alias molestias aperiam nihil aliquam nostrum magnam iure commodi aliquid dicta!Loremlore
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, ipsum distinctio? Perspiciatis totam corporis atque, corrupti repellendus exercitationem quisquam aspernatur recusandae cumque ab, officia, cupiditate perferendis doloremque suscipit? Eaque, Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam nostrum, corrupti vitae maxime quos ipsam voluptates consequatur totam dolores. Sapiente quasi iste deleniti autem, repudiandae eius sit quaerat fugiat itaque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur nulla deleniti error id, quaerat esse veritatis accusantium, ipsam animi possimus est nemo consectetur quidem fugiat itaque facere expedita in minus.>
+    </p>
+</body>
+</html>
